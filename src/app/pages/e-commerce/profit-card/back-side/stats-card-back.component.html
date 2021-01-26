@@ -1,0 +1,21 @@
+<nb-card-header>
+  <i class="ion-social-usd"></i>
+  <span class="title">Cost per 1k impressions - Variation day to day</span>
+</nb-card-header>
+<nb-card-body>
+  <div class="info">
+    <div class="period">
+      <div class="caption">Average Cost per 1k impressions</div>
+      <div class="label">
+        <span class="currency">$</span>{{averageCPM}}
+      </div>
+    </div>
+    <div class="period latest">
+      <div class="caption">Max Cost per 1k impressions</div>
+      <div class="label">
+        <span class="currency">$</span>{{maxCostCPM}}
+      </div>
+    </div>
+  </div>
+  <ngx-stats-ares-chart [points]="chartData"></ngx-stats-ares-chart>
+</nb-card-body>
